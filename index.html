@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OTP verification</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="text-info">Admit <span class="text-danger">kard</span></h2>
+    </header>
+    <div class="container" id="page">
+        <div class="container">
+            <div class="head">
+                <h3>Wellcome Back</h3>
+                <p class="text-info">Please sign in to your account</p>
+            </div>
+        </div>
+        <div class="container-fluid row">
+            <div class="inputfield">
+                <select class="form-select" aria-label=".form-select-lg example" id="con">
+                    <option selected value="+91">+91 IN</option>
+                    <option value="+1">+93 AF</option>
+                    <option value="+61">+61 AUS</option>
+                    <option value="+86">+86 CHN</option>
+                    <option value="+971">+971 AE</option>
+                </select>
+                <input type="text" class="form-control" id="usr" placeholder="(900-8899-111)" maxlength="10">
+            </div>
+            <div class="container msg">
+            <label class="text-danger" id="msg"></label>
+            </div>
+            <div class="container button">
+                <button type="button" class="btn btn-outline-primary" id="signin" onclick="validate()">sign in with OTP</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
